@@ -41,10 +41,10 @@ const HomePage = () => {
   };
   const navigateTo = useNavigate();
   useEffect(() => {
-    if (error) {
-      toast.error(error);
-      dispatch(clearAllUserErrors());
-    }
+    // if (error) {
+    //   toast.error(error);
+    //   dispatch(clearAllUserErrors());
+    // }
     if (!isAuthenticated) {
       navigateTo("/login");
     }
